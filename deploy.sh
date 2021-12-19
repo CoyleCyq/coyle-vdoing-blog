@@ -12,19 +12,21 @@ cd docs/.vuepress/dist
 # deploy to github pages
 # echo 'b.xugaoyi.com' > CNAME
 
-if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
-  githubUrl=git@github.com:CoyleCyq/coyle-vdoing-blog.git
-else
-  msg='来自github actions的自动部署'
-  githubUrl=https://CoyleCyq:${GITHUB_TOKEN}@github.com/CoyleCyq/coyle-vdoing-blog.git
-  git config --global user.name "CoyleCyq"
-  git config --global user.email "592569815@qq.com"
-fi
-git init
-git add -A
-git commit -m "${msg}"
-git push -f $githubUrl main:gh-pages # 推送到github gh-pages分支
+# if [ -z "$GITHUB_TOKEN" ]; then
+#   msg='deploy'
+#   githubUrl=git@github.com:CoyleCyq/coyle-vdoing-blog.git
+# else
+#   msg='来自github actions的自动部署'
+#   githubUrl=https://CoyleCyq:${GITHUB_TOKEN}@github.com/CoyleCyq/coyle-vdoing-blog.git
+#   git config --global user.name "CoyleCyq"
+#   git config --global user.email "592569815@qq.com"
+# fi
+# git init
+# git add -A
+# git commit -m "${msg}"
+# git push -f $githubUrl main:gh-pages # 推送到github gh-pages分支
+
+git push -f https://github.com/CoyleCyq/coylecyq.github.io.git master
 
 # deploy to coding pages
 # echo 'blog.coyle.top' > CNAME  # 自定义域名
