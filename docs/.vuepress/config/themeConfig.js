@@ -6,7 +6,7 @@ const htmlModules = require('./htmlModules.js');
 module.exports = {
   nav,
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-  logo: '/img/EB-logo.png', // 导航栏logo
+  logo: '/img/coyle-full.png', // 导航栏logo
   repo: 'CoyleCyq/coyle-vdoing-blog', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -52,7 +52,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+    avatar: 'https://nas.caoyuqi.cloud:30007/images/2021/07/21/avatar1.jpg',
     name: 'Coyle',
     slogan: '种一棵树最好的时间是十年前，其次是现在。',
   },
